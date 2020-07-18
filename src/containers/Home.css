@@ -1,0 +1,47 @@
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+/* .list {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+} */
+
+.photoNumber {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.photoNumber div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.photoNumber div p {
+  padding: 15px 30px;
+  background: #ccc;
+  font-size: 48px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+@media (max-width:740px) {
+  .photoNumber img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width:420px) {
+  .photoNumber img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width:350px) {
+  .photoNumber img {
+    width: 230px;
+    height: 230px;
+  }
+}
