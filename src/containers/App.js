@@ -47,9 +47,7 @@ class App extends React.Component {
 		let api = `https://api.vk.com/method/photos.get?v=5.52&access_token=${this.state.authToken}&owner_id=-${ownerId}&album_id=wall&count=1000`
 		fetchJsonp(api)
 		.then(res => res.json())
-		.then(data => data.response.items.map(data => {
-		this.setState({ items: data.photo_604 })
-		})) //this.setState({ items: data.response.items })
+		.then(data => data.response.items.map(data => {this.setState({ items: data.photo_604 })}))//.map(data => {this.setState({ items: data })})) //this.setState({ items: data.response.items })
 		.catch(e => []);
 	}
 
